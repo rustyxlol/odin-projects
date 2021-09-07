@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title">Library</h1>
+        <nav class="navbar">
+            <ul>
+                <li class="li-add">
+                    <button class="addBookButton" id="addBookButton">add a book</button>
+                </li>
+                <li class="li-search">
+                    <input type="text" class="search" placeholder="search title">
+                </li>
+                <li class="li-login">
+                    <button class="login">login</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div id="addBookPopUp" class="addBookPopUp">
+            <div class="centerAlign">
+                <div class="addBook">
+                    <span class="close">close</span>
+                    <form id='form' class="someForm">
+                        <input type="text" class="addBookTitle" id="addBookTitle" placeholder="Insert Book Title" required>
+                        <input type="text" class="addBookAuthor" id="addBookAuthor" placeholder="Insert Book Author" required>
+                        <input type="text" class="addBookImage" id="addBookImage" placeholder="Insert Image URL">
+                        <div class="readSwitch">
+                            <p>reading status:</p>
+                            <label class="switch">
+                                <input type="checkbox" id="readingStatus" class="readingStatus">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <button class="submitAddBook" type="submit" value="Submit"> Submit </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="bookContainer">
+        </div>
+    </main>
+</body>
+
+</html>

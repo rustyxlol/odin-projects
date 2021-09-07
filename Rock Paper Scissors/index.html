@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="popup">
+        <div class="popupB">
+            <div class="restartPopUp">
+                <div class="whoWon">
+                </div>
+                <div class="playAgain">
+                    Play Again?
+                </div>
+                <div class="restart">
+                    <button class="restartButton">RESTART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gameContainer">
+        <div class="container">
+            <div class="left">
+                <div class="avatar"> <img src="soldier.PNG" alt="" srcset=""> </div>
+                <div class="userSelect rock" id="rock"> Rock </div>
+                <div class="userSelect paper" id="paper"> Paper</div>
+                <div class="userSelect scissors" id="scissors"> Scissors</div>
+            </div>
+            <div class="center">
+                <div class="topCenter"> 
+                    <div class="playerScore">
+                        0
+                    </div>
+                    
+                    <div class="round">
+                        <span>ROUND:<span class="roundNumber">1</span></span>    
+                    </div>
+                    <div class="botScore">
+                        0
+                    </div>
+                </div>
+                <div class="middleCenter">
+                    <div class="userChoice"></div>
+                    <div class="pcChoice"></div>
+                </div>
+                <div class="bottomCenter">
+                    <div class="comments">
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="pcavatar"><img src="robot.png" alt="" srcset=""> </div>
+                <div class="rock"> Rock </div>
+                <div class="paper"> Paper</div>
+                <div class="scissors"> Scissors</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

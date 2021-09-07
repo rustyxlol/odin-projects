@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+    font-family: Courier New;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    background-color: #f8faf0;
+}
+.drum-parent {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    width: 150px;
+    height: 130px;
+    font-size: 60px;
+    background-color: #7a6e6a;
+    box-shadow: inset 1px -5px 0px -3px #a39c99;
+    border: 1px solid #807877;
+    color: white;
+    text-shadow: 0px 1px 0px #574c47;
+}
+
+button > p {
+    font-size: 20px;
+    pointer-events: none;
+}
+
+.animation {
+    transform: translate(0px, 5px);
+    box-shadow: 0px 3px 0px 1px #574c47;
+}

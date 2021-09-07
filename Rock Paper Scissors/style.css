@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: Courier New;
+    text-shadow: 0px 1px 0px #3d3a3a;
+    font-size: 2vw;
+    font-weight: 600;
+    height: 98vh;
+    user-select: none;
+    background-color: #f8faf0;
+}
+
+body {
+    display: block;
+    margin: 8px;
+}
+
+.gameContainer {
+    min-height: 550px;
+    height: 98vh;
+    padding: 20px 50px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    margin-top: 60px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.right,
+.left {
+    margin: 5px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    border: 5px solid #555751;
+    /* box-shadow: 0px 10px 8px black; */
+    /* background: url(../img/bricks.jpg); */
+    background-color: #7a6e6a;
+}
+
+.center {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    /* background: url(../img/battle.jpg) no-repeat center; */
+    background-size: cover;
+    border: 4px solid;
+    
+    margin: 0px 20px;
+}
+.topCenter {
+    /* height: 15%;
+    display: flex;
+    background-color: bisque;
+    justify-content: space-around;
+    align-items: flex-end;
+    */
+    display: flex;
+    margin: 5px;
+    padding: 2% 5px;
+    height: 15%;
+    background-color: #7a6e6a;
+    
+    border: solid black;
+    justify-content: space-between;
+    align-items: center;
+}
+.middleCenter {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    background-color: #7a6e6a;
+    border: solid black;
+    height: 70%;
+    
+}
+
+.bottomCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 2% 5px;
+    height: 15%;
+    background-color: #7a6e6a;
+    
+    border: solid black;
+}
+
+.userChoice,
+.pcChoice {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+}
+.userChoice {
+    border-right: solid 1px black;
+}   
+.pcChoice {
+    border-left: solid 1px black;
+
+}   
+.avatar,
+.pcavatar {
+    display: flex;
+    background-color: #f8faf0;
+    height: 30%;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: solid black;
+}
+
+.rock,
+.paper,
+.scissors {
+    display: flex;
+    background-color: #f8faf0;
+    height: 20%;
+    width: 90%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    border: solid black;
+    overflow: hidden;
+}
+.left > div:not(:first-child) {
+    cursor: pointer;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    width: 30%;
+    background-color: white;
+    border: solid rgb(66, 44, 3);
+    overflow: hidden;
+}
+.playerScore,
+.botScore {
+    height: 85%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    
+    border: solid rgb(66, 44, 3);
+}
+
+.comments {
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.popup {
+    display: none;
+}
+
+.popupB {
+    height: 100%h;
+    width: 100%;
+    background-color: #7a6e6aef;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.restartPopUp {
+    height: 50%;
+    width: 50%;
+    background-color: #7a6e6a;
+    border: 4px solid black;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+}
+
+.restartButton {
+    width: 300px;
+    height: 100px;
+    background-color: #f8faf0;
+    
+    border: solid black;
+    font-family: Courier New;
+    font-size: 2vw;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.whoWon {
+    color:white;
+}
